@@ -1,0 +1,48 @@
+@import '../../../variables.scss';
+
+:host {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h4 {
+  margin: 0;
+}
+
+ul {
+  flex: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 1em;
+}
+
+li.FETCH {
+  background-color: $primary-color;
+  color: ghostwhite;
+}
+
+li.ERROR {
+  background-color: salmon;
+}
+
+li.DEBUG {
+  border-bottom: solid 1px $primary-color;
+}
+
+li.DEBUG:first-child {
+  border-top: solid 1px $primary-color;
+}
+
+li.NOTIFICATION {
+  background-color: seagreen;
+  color: ghostwhite;
+}
+
+li .container {
+  justify-content: space-between;
+}

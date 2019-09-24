@@ -1,0 +1,11 @@
+<ul *ngIf="messagesService.messages.size">
+  <li
+    *ngFor="let message of messagesService.messages | keyvalue"
+    class="{{ message.value.namespace }}"
+  >
+    <div class="content-container container">
+      <span>{{ message.value.message }}</span>
+      <button (click)="clear(message.key)">Clear</button>
+    </div>
+  </li>
+</ul>

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  SUBREDDIT: 'https://old.reddit.com/r/dota2.json'
 };

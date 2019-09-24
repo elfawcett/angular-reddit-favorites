@@ -1,0 +1,32 @@
+@import '../../../variables.scss';
+
+:host {
+  display: block;
+  padding: 1em 0;
+  background-color: $primary-color;
+}
+
+nav {
+  display: flex;
+}
+
+nav > div {
+  flex: auto;
+  display: flex;
+}
+
+nav > div > a:not(:last-child) {
+  padding-right: 2em;
+}
+
+nav > div.left {
+  justify-content: flex-start;
+}
+
+nav > div.right {
+  justify-content: flex-end;
+}
+
+nav a {
+  color: ghostwhite;
+}

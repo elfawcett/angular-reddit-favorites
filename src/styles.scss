@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import './variables.scss';
+
+body,
+html {
+  background-color: $bg;
+  font-family: $font-stack;
+  size: $font-size;
+  color: $color;
+  padding: 0;
+  margin: 0;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 80vw;
+  display: block;
+}
+
+.container {
+  display: flex;
+}
+
+a,
+a:visited,
+a:hover {
+  color: $link-color;
+  text-decoration: none;
+}
