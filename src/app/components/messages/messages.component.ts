@@ -10,17 +10,7 @@ export class MessagesComponent implements OnInit {
   constructor(public messagesService: MessagesService) {}
 
   ngOnInit() {
-    console.log(this.messagesService.messages, this.messagesService.messages.size);
-
-    /* Adds a fake message for testing */
-    this.messagesService.error('Fake error');
-    this.messagesService.error('Fake error');
-    this.messagesService.error('Fake error');
-    this.messagesService.debug('Fake debug');
-    this.messagesService.debug('Fake debug');
-    this.messagesService.debug('Fake debug');
-    this.messagesService.notification('Fake notify');
-    this.messagesService.fetch('Fake fetch');
+    /* consider a timeout to autoclear messages after a delay */
   }
 
   clear(key?: number) {

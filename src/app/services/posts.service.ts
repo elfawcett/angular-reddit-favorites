@@ -15,7 +15,7 @@ export class PostsService {
   constructor(private http: HttpClient, private messageService: MessagesService) {}
 
   getPosts(): Observable<IPost[]> {
-    this.messageService.fetch(`GET posts from ${environment.SUBREDDIT}`);
+    this.messageService.fetch(`GET ${environment.SUBREDDIT}`);
 
     return of(MOCK_POSTS);
   }
