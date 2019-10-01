@@ -8,6 +8,6 @@ import { environment } from '../environments/environment';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-reddit-favorites';
-  subreddit = environment.SUBREDDIT;
+  title = 'angular-jokes-favorites';
+  subjokes = environment.SUBREDDIT;
 }

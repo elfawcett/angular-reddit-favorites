@@ -17,6 +17,8 @@ export class PostsService {
   getPosts(): Observable<IPost[]> {
     this.messageService.fetch(`GET ${environment.SUBREDDIT}`);
 
+    /* make this actually get something, look to abuse observables as much as possible */
+
     return of(MOCK_POSTS);
   }
 }
